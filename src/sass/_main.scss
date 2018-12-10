@@ -1,0 +1,76 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  background-color: #fbebea;
+  font-family: 'Circe', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+}
+	
+a {
+ text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.section-subtitle {
+  font-family: 'IntroScriptR', serif;
+  font-size: 22px;
+  line-height: 25px;
+  @media (min-width: #{$tablet-width}) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  @media (min-width: #{$desktop-width}) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.button {
+  display: block;
+  padding: 14px 62px;
+  background-color: #f50049;
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  &:hover {
+    transition: all 0.4s;
+    box-shadow: 0 5px 12px rgba(#ff0043, 0.3);
+  }
+}
+
+.container {
+ margin: 0 auto;
+ /* border: 1px solid red; */
+ padding: 0 0;
+ width: 280px;
+ @media (min-width: #{$tablet-width}) {
+		width: 728px;
+    /* width: 98%; */
+ }
+ @media (min-width: #{$desktop-width}) {
+		width: 1220px;
+    /* width: 98%; */
+ }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path:inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
