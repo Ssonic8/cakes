@@ -167,15 +167,6 @@
 			&__wrapper {
 			align-items: flex-start;
 			}
-			&::after {
-				position: absolute;
-				content:'';
-				width: 124px;
-				height: 439px;
-				top: 10%;
-				right: 55%;
-				background: url('../img/header/berry.png') center no-repeat;
-			}
 		}
 		&-title {
 			align-items: flex-start;

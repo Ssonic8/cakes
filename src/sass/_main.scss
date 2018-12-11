@@ -17,6 +17,20 @@ img {
 	height: auto;
 }
 
+.section-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 26px;
+  @media (min-width: #{$tablet-width}) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  @media (min-width: #{$desktop-width}) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
 .section-subtitle {
   font-family: 'IntroScriptR', serif;
   font-size: 22px;
@@ -32,7 +46,7 @@ img {
 }
 .button {
   display: block;
-  padding: 14px 62px;
+  padding: 12px 62px;
   background-color: #f50049;
   border-radius: 30px;
   font-size: 14px;
@@ -45,7 +59,6 @@ img {
     box-shadow: 0 5px 12px rgba(#ff0043, 0.3);
   }
 }
-
 .container {
  margin: 0 auto;
  /* border: 1px solid red; */
