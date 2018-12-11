@@ -10,11 +10,11 @@
 	<title>Cakes</title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic" rel="stylesheet"><!-- font-family: 'Playfair Display', serif; -->
- <link rel="stylesheet" href="css/circe.css">
- <link rel="stylesheet" href="css/introscriptr.css">
+	<link rel="stylesheet" href="css/circe.css">
+	<link rel="stylesheet" href="css/introscriptr.css">
 	
-
- <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/style.css">
  
 </head>
 <body>
@@ -161,13 +161,145 @@
 		</ul>
 	</section>
 
-	<script>
-		var button = document.querySelector('.main-nav__toggle');
-		var menu = document.querySelector('.site-list');
-		button.addEventListener('click', function(evt) {
-			evt.preventDefault();
-			menu.classList.toggle('site-list--active');
-		});
-	</script>
+	<section class="constructor container">
+		<h2 class="constructor-title section-title">Индивидуальный  заказ</h2>
+		<div class="section-subtitle">Соберите торт в 3 шага</div>
+		<ul class="constructor__list">
+			<li class="constructor__item">
+				<div class="constructor__item-title"><span>01</span>Выберите начинку</div>
+				<div class="carousel-consist owl-carousel" id="carousel-consist">
+					<div class="carousel-slide">
+						<img src="img/constructor/ganash-mobile.jpg" alt="ganash" class="carousel-consist__img">
+						<div class="carousel-consist__content">
+							<h4>Шоколадный ганаш</h4>
+							<p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+							<p class="carousel-consist__price">1000 руб/кг</p>
+						</div>
+						</div>
+					<div class="carousel-slide">
+						<img src="img/constructor/ganash-mobile.jpg" alt="ganash" class="carousel-consist__img">
+						<div class="carousel-consist__content">
+							<h4>Не шоколадный ганаш</h4>
+							<p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+							<p class="carousel-consist__price">900 руб/кг</p>
+						</div>
+					</div>
+				</div>
+				<div class="controls"><span class="left"></span><span class="right"></span></div>
+				<div class="constructor-button">
+					<button href="" class="button carousel-consist__button">Выбрать</button>
+				</div>
+			</li>
+			<li class="constructor__item">
+				<div class="constructor__item-title"><span>02</span>Размер</div>
+				<div class="carousel-size owl-carousel" id="carousel-size">
+					<div class="carousel-slide carousel-size__slide">
+						<div class="carousel-size__img">
+							<img src="img/constructor/round-1.png" alt="" ><span>1 кг</span>
+						</div>
+						<p class="carousel-size__content">17-18 см <br>(1 кг – 6 персон)</p>
+					</div>
+					<div class="carousel-slide carousel-size__slide">
+						<div class="carousel-size__img">
+							<img src="img/constructor/round-2.png" alt="" ><span>2 кг</span>
+						</div>
+						<p class="carousel-size__content">23-24 см <br>(10–12 персон)</p>
+					</div>
+					<div class="carousel-slide carousel-size__slide">
+						<div class="carousel-size__img">
+							<img src="img/constructor/round-5.png" alt="" ><span>5 кг</span>
+						</div>
+						<p class="carousel-size__content">Два яруса 25 и 20 см <br>(15–20 персон)</p>
+					</div>
+					<div class="carousel-slide carousel-size__slide">
+						<div class="carousel-size__img">
+							<img src="img/constructor/round-8.png" alt="" ><span>8 кг</span>
+						</div>
+						<p class="carousel-size__content">Три яруса 30,25 и 18 см <br>(25–30 персон)</p>
+					</div>
+				</div>
+				<div class="controls"><span class="left"></span><span class="right"></span></div>
+				<div class="constructor-button">
+					<button href="" class="button carousel-size__button">Выбрать</button>
+				</div>
+			</li>
+
+			<li class="constructor__item">
+				<div class="constructor__item-title"><span>03</span>Оформление</div>
+				<div class="carousel-slider__wrapper">
+					<div class="decor-image"><img src="" alt=""></div>
+					<div class="carousel-decor owl-carousel" id="carousel-decor">
+						<div class="carousel-slide carousel-decor__slide">
+							<div class="carousel-decor__img">
+								<img src="img/constructor/marshm.png" alt="marshmelou">
+								<div class="carousel-decor__text">
+									<p>Маршмэллоу</p>
+									<p class="carousel-consist__price">600 руб/кг</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-slide carousel-decor__slide">
+							<div class="carousel-decor__img">
+								<img src="img/constructor/jelly.png" alt="jelly">
+								<div class="carousel-decor__text">
+									<p>Ягодное ассорти</p>
+									<p class="carousel-consist__price">700 руб/кг</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="constructor-button">
+						<button href="" class="button carousel-decor__button">Выбрать</button>
+					</div>
+				</div>
+				<div class="constructor-result">
+					<h3>Ваш выбор</h3>
+					<form action="" class="constructor-form">
+						<div class="form__item">
+							<label for="consist">Начинка</label>
+							<input type="text" id="consist" value="Шоколадный ганаш">
+						</div>
+						<div class="form__item">
+							<label for="size">Размер</label>
+							<input type="text" id="size" value="1 кг">
+						</div>
+						<div class="form__item">
+							<label for="decor">Оформление</label>
+							<input type="text" id="decor" value="Маршмэллоу">
+						</div>
+						<div class="constructor-button">
+							<button href="" class="button form__button">Заказать торт</button>
+						</div>
+					</form>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section class="reviews container">
+		<h2 class="reviews__title">Отзывы</h2>
+		<ul class="reviews__list owl-carousel" id="reviews-carousel">
+			<li class="reviews__item">
+				<div class="reviews__img"><img src="img/reviews/review-1.png" alt="review1"></div>
+				<div class="reviews__content">
+					<h4>Мария</h4>
+					<h5>юрист, 33 года</h5>
+					<p>Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p><span>Развернуть</span>
+				</div>
+			</li>
+			<li class="reviews__item">
+				<div class="reviews__img"><img src="img/reviews/review-1.png" alt="review1"></div>
+				<div class="reviews__content">
+					<h4>Michael</h4>
+					<h5>юрист, 33 года</h5>
+					<p>Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p><span>Развернуть</span>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
