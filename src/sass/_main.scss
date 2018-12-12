@@ -1,8 +1,8 @@
 body {
   min-width: 320px;
   margin: 0;
-  /* background-color: #fbebea; */
-  background-color: #fe8079;
+  background-color: #fbebea;
+  /* background-color: #fe8079; */
   font-family: 'Circe', sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -41,12 +41,12 @@ img {
   font-size: 22px;
   line-height: 25px;
   @media (min-width: #{$tablet-width}) {
-    font-size: 36px;
+    font-size: 26px;
     line-height: 40px;
   }
   @media (min-width: #{$desktop-width}) {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 .button {
@@ -66,7 +66,7 @@ img {
 }
 .container {
  margin: 0 auto;
- border: 1px solid red;
+ /* border: 1px solid red; */
  padding: 0 0;
  width: 280px;
  @media (min-width: #{$tablet-width}) {

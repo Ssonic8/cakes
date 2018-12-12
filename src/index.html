@@ -169,26 +169,36 @@
 				<div class="constructor__item-title"><span>01</span>Выберите начинку</div>
 				<div class="carousel-consist owl-carousel" id="carousel-consist">
 					<div class="carousel-slide">
-						<img src="img/constructor/ganash-mobile.jpg" alt="ganash" class="carousel-consist__img">
+						<picture>
+							<source media="(min-width:1366px)" srcset="img/constructor/ganash-desktop.png">
+							<source media="(min-width:768px)" srcset="img/constructor/ganash-tablet.png">
+							<img src="img/constructor/ganash-mobile.jpg" alt="ganash" class="carousel-consist__img">
+						</picture>
 						<div class="carousel-consist__content">
 							<h4>Шоколадный ганаш</h4>
 							<p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-							<p class="carousel-consist__price">1000 руб/кг</p>
+							<div class="carousel-consist__price">1000 руб/кг</div>
+							<div class="constructor-button">
+								<button href="" class="button carousel-consist__button">Выбрать</button>
+							</div>
 						</div>
-						</div>
+					</div>
 					<div class="carousel-slide">
-						<img src="img/constructor/ganash-mobile.jpg" alt="ganash" class="carousel-consist__img">
+						<picture>
+							<source media="(min-width:1366px)" srcset="img/constructor/ganash-desktop.png">
+							<source media="(min-width:768px)" srcset="img/constructor/ganash-tablet.png">
+							<img src="img/constructor/ganash-mobile.jpg" alt="ganash" class="carousel-consist__img">
+						</picture>
 						<div class="carousel-consist__content">
 							<h4>Не шоколадный ганаш</h4>
 							<p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-							<p class="carousel-consist__price">900 руб/кг</p>
+							<div class="carousel-consist__price">900 руб/кг</div>
+							<div class="constructor-button">
+								<button href="" class="button carousel-consist__button">Выбрать</button>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="controls"><span class="left"></span><span class="right"></span></div>
-				<div class="constructor-button">
-					<button href="" class="button carousel-consist__button">Выбрать</button>
-				</div>
+				</div>				
 			</li>
 			<li class="constructor__item">
 				<div class="constructor__item-title"><span>02</span>Размер</div>
@@ -218,23 +228,22 @@
 						<p class="carousel-size__content">Три яруса 30,25 и 18 см <br>(25–30 персон)</p>
 					</div>
 				</div>
-				<div class="controls"><span class="left"></span><span class="right"></span></div>
-				<div class="constructor-button">
+				<div class="constructor-button size-button">
 					<button href="" class="button carousel-size__button">Выбрать</button>
 				</div>
 			</li>
 
-			<li class="constructor__item">
-				<div class="constructor__item-title"><span>03</span>Оформление</div>
+			<li class="constructor__item decor-item">
+				<div class="constructor__item-title decor-title"><span>03</span>Оформление</div>
 				<div class="carousel-slider__wrapper">
-					<div class="decor-image"><img src="" alt=""></div>
+					<div class="decor-image"><img src="img/constructor/cake-bg.png" alt=""></div>
 					<div class="carousel-decor owl-carousel" id="carousel-decor">
 						<div class="carousel-slide carousel-decor__slide">
 							<div class="carousel-decor__img">
 								<img src="img/constructor/marshm.png" alt="marshmelou">
 								<div class="carousel-decor__text">
 									<p>Маршмэллоу</p>
-									<p class="carousel-consist__price">600 руб/кг</p>
+									<div class="carousel-consist__price">600 руб/кг</div>
 								</div>
 							</div>
 						</div>
@@ -243,7 +252,16 @@
 								<img src="img/constructor/jelly.png" alt="jelly">
 								<div class="carousel-decor__text">
 									<p>Ягодное ассорти</p>
-									<p class="carousel-consist__price">700 руб/кг</p>
+									<div class="carousel-consist__price">700 руб/кг</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-slide carousel-decor__slide">
+							<div class="carousel-decor__img">
+								<img src="img/constructor/marshm.png" alt="marshmelou">
+								<div class="carousel-decor__text">
+									<p>Маршмэллоу</p>
+									<div class="carousel-consist__price">600 руб/кг</div>
 								</div>
 							</div>
 						</div>
@@ -268,7 +286,7 @@
 							<input type="text" id="decor" value="Маршмэллоу">
 						</div>
 						<div class="constructor-button">
-							<button href="" class="button form__button">Заказать торт</button>
+							<button type="submit" class="button form__button">Заказать торт</button>
 						</div>
 					</form>
 				</div>
@@ -277,25 +295,25 @@
 	</section>
 
 	<section class="reviews container">
-		<h2 class="reviews__title">Отзывы</h2>
-		<ul class="reviews__list owl-carousel" id="reviews-carousel">
-			<li class="reviews__item">
+		<h2 class="reviews__title section-title">Отзывы</h2>
+		<div class="reviews__list owl-carousel" id="carousel-reviews">
+			<div class="reviews__item">
 				<div class="reviews__img"><img src="img/reviews/review-1.png" alt="review1"></div>
 				<div class="reviews__content">
 					<h4>Мария</h4>
 					<h5>юрист, 33 года</h5>
-					<p>Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p><span>Развернуть</span>
+					<p>Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <span>Развернуть</span></p>
 				</div>
-			</li>
-			<li class="reviews__item">
+			</div>
+			<div class="reviews__item">
 				<div class="reviews__img"><img src="img/reviews/review-1.png" alt="review1"></div>
 				<div class="reviews__content">
 					<h4>Michael</h4>
-					<h5>юрист, 33 года</h5>
-					<p>Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p><span>Развернуть</span>
+					<h5>юрист, 32 года</h5>
+					<p>Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <span>Развернуть</span></p>
 				</div>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</section>
 
 	<script src="js/jquery-3.3.1.min.js"></script>

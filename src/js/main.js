@@ -12,6 +12,7 @@ $(document).ready(function(){
 			loop: true,
 			center: true,
 			margin: 10,
+			navText: ["",""],
 			responsive: {
 				0: {
 					nav: false
@@ -26,20 +27,43 @@ $(document).ready(function(){
 			loop: true,
 			center: true,
 			margin: 10,
+			navText: ["",""],
 			responsive: {
 				0: {
 					nav: false
 				},
 				768: {
+					items: 4,
+					mouseDrag: false,
+					touchDrag: false,
+					center: false,
 					nav: true
 				}
 			}
 		});
 		$('#carousel-decor').owlCarousel({
+			loop: true,
+			center: true,
+			margin: 10,
+			navText: ["",""],
+			responsive: {
+				0: {
+					items: 1,
+					nav: false
+				},
+				768: {
+					items: 2,
+					center: false,
+					nav: true
+				}
+			}
+		});
+		$('#carousel-reviews').owlCarousel({
 			items: 1,
 			loop: true,
 			center: true,
 			margin: 10,
+			navText: ["",""],
 			responsive: {
 				0: {
 					nav: false
