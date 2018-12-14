@@ -30,6 +30,9 @@ $(document).ready(function(){
 			navText: ["",""],
 			responsive: {
 				0: {
+					items: 1,
+					mouseDrag: true,
+					touchDrag: true,
 					nav: false
 				},
 				768: {

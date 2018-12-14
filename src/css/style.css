@@ -82,7 +82,7 @@ img {
 
 .container {
   margin: 0 auto;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   padding: 0 0;
   width: 280px;
 }
@@ -1334,5 +1334,230 @@ input[type="checkbox"].visually-hidden {
   .reviews__content span {
     font-size: 18px;
     line-height: 20px;
+  }
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__title {
+  margin-top: 10px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.about__img {
+  width: 156px;
+  height: 156px;
+}
+
+.about-social__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 90px;
+}
+
+.about-social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.about-social__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.about-subtitle {
+  text-align: left;
+}
+
+.about__content {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.about__content h3 {
+  display: none;
+}
+
+.about__content h4 {
+  margin: 0;
+}
+
+.about__cite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.about__cite-img {
+  width: 26px;
+  height: 17px;
+}
+
+.about__cite p {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.about__cite-sign {
+  width: 64px;
+  height: 31px;
+}
+
+@media (min-width: 768px) {
+  .about__wrapper {
+    margin-top: 30px;
+    padding: 28px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .about__title {
+    display: none;
+  }
+
+  .about__img {
+    order: 2;
+    margin: auto 0;
+    width: 314px;
+    height: 314px;
+  }
+
+  .about__img img {
+    width: 100%;
+  }
+
+  .about-social__list {
+    order: 3;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+  }
+
+  .about-social__item {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .about__content {
+    order: 1;
+    margin-bottom: 0;
+    width: 330px;
+  }
+
+  .about__content h3 {
+    display: block;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .about__content h4 {
+    font-size: 15px;
+  }
+
+  .about__cite {
+    margin-bottom: 50px;
+  }
+
+  .about__cite-img {
+    width: 35px;
+    height: 22px;
+  }
+
+  .about__cite p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 360px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .about__cite-sign {
+    width: 82px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .about__wrapper {
+    padding: 0;
+  }
+
+  .about__img {
+    padding-right: 70px;
+    width: 510px;
+    height: 510px;
+  }
+
+  .about-social__list {
+    margin-top: -30px;
+  }
+
+  .about__content {
+    width: 560px;
+  }
+
+  .about__content h3 {
+    margin-top: 60px;
+    margin-bottom: 26px;
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .about__content h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about__content p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about__cite {
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
+
+  .about__cite-img {
+    width: 60px;
+    height: 40px;
+  }
+
+  .about__cite p {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    width: 640px;
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  .about__cite-sign {
+    width: 149px;
+    height: 73px;
   }
 }
