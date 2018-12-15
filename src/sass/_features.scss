@@ -1,0 +1,182 @@
+.features {
+	&-title {
+		margin-bottom: 10px;
+	}
+	&__one {
+		&-img {
+			display: none;
+		}
+		&-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			list-style: none;
+			padding-left: 0;
+			background-color: #fff;
+			& li {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		&-icon {
+			padding: 12px;
+			max-height: 61px;
+		}
+		&-text {
+			text-align: center;
+			& h4 {
+				margin: 0;
+				font-size: 16px;
+			}
+			& p {
+				margin: 8px;
+			}
+		}
+	}
+	&__two {
+		&-title {
+			text-align: left;
+			margin-top: 39px;
+		}
+		&-subtitle {
+			margin-top: 10px;
+			margin-bottom: 0;
+			text-align: left;
+		}
+		&-content {
+			& p {
+				margin: 0;
+				width: 95%;
+			}
+		}
+	}
+}
+
+
+
+
+@media (min-width: #{$tablet-width}) {
+	.features {
+		&-title {
+			margin-bottom: 10px;
+		}
+		&__one {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-top: -80px;
+			&-img {
+				display: block;
+				width: 38%;
+			}
+			&-content {
+				justify-content: center;
+				align-items: flex-start;
+				background-color: transparent;
+				width: 54%;
+				& li {
+					flex-direction: row;
+					justify-content: space-between;
+				}
+			}
+			&-icon {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 65px;
+				padding-right: 12px;
+				& img {
+					width: 50px;
+				}
+			}
+			&-text {
+				text-align: left;
+				width: 80%;
+				& h4 {
+					margin: 0;
+					font-size: 16px;
+				}
+				& p {
+					margin: 0px;
+				}
+			}
+		}
+		&__two {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: nowrap;
+			margin-top: -70px;
+			&-content {
+				padding-left: 28px;
+				width: 45%;
+				& p {
+					width: 100%;
+				}
+			}
+			&-title {
+				margin-top: 0;
+			}
+			&-subtitle {
+				margin-top: 0;
+			}
+			&-img {
+				width: 54%;
+			}
+		}
+	}
+}
+
+
+
+
+@media (min-width: #{$desktop-width}) {
+	.features {
+		&__one {
+			&-img {
+				width: 42%;
+			}
+			&-content {
+				width: 55%;
+				align-items: flex-start;
+			}
+			&-icon {
+				margin-right: 20px;
+				& img {
+					width: 65px;
+				}
+			}
+			&-text {
+				width: 55%;
+				margin-right: auto;
+				font-size: 20px;
+				line-height: 24px;
+				& h4 {
+				font-size: 20px;
+				line-height: 24px;
+				}
+			}
+		}
+		&__two {
+			&-content {
+				width: 36%;
+				& p {
+					font-size: 20px;
+					line-height: 24px;
+				}
+			}
+			&-title {
+				margin-bottom: 20px;
+			}
+			&-subtitle {
+				margin-bottom: 12px;
+			}
+			&-img {
+				width: 60%;
+			}
+		}
+	}
+}
