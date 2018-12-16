@@ -43,17 +43,20 @@
 	}
 	&__img {
 		margin-top: -30px;
+		& img {
+			display: block;
+		}
 	}
 }
 
 
 @media (min-width: #{$tablet-width}) {
 	.how {
-		background-color: transparent;
 		&__wrapper {
 			min-height: 420px;
 			background: #e3353d url('../img/how/box-tablet.jpg') 0 0 no-repeat;
 			background-size: cover;
+			padding-bottom: 20px;
 		}
 		&__img {
 			display: none;
