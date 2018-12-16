@@ -2,7 +2,6 @@ body {
   min-width: 320px;
   margin: 0;
   background-color: #fbebea;
-  /* background-color: #fe8079; */
   font-family: 'Circe', sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -82,7 +81,7 @@ img {
 
 .container {
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 0 0;
   width: 280px;
 }
@@ -1619,6 +1618,12 @@ input[type="checkbox"].visually-hidden {
   width: 95%;
 }
 
+.features__two-img {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
 @media (min-width: 768px) {
   .features-title {
     margin-bottom: 10px;
@@ -1703,6 +1708,7 @@ input[type="checkbox"].visually-hidden {
 
   .features__two-img {
     width: 54%;
+    height: 100%;
   }
 }
 
@@ -1755,5 +1761,135 @@ input[type="checkbox"].visually-hidden {
 
   .features__two-img {
     width: 60%;
+  }
+}
+
+.how {
+  color: #fff;
+}
+
+.how__wrapper {
+  width: 100%;
+  background-color: #e3353d;
+}
+
+.how-title {
+  padding-top: 35px;
+  margin-bottom: 15px;
+}
+
+.how__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 98%;
+  list-style: none;
+  padding-left: 0;
+}
+
+.how__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.how__list-number {
+  width: 16%;
+  font-family: 'Playfair Display', serif;
+  text-align: right;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.how__list-text {
+  width: 80%;
+}
+
+.how__list-text h4 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.how__list-text p {
+  margin-top: 6px;
+}
+
+.how__img {
+  margin-top: -30px;
+}
+
+@media (min-width: 768px) {
+  .how {
+    background-color: transparent;
+  }
+
+  .how__wrapper {
+    min-height: 420px;
+    background: #e3353d url("../img/how/box-tablet.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+
+  .how__img {
+    display: none;
+  }
+
+  .how__list {
+    margin-top: 40px;
+    margin-left: 40%;
+    width: 54%;
+  }
+
+  .how__list-item {
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .how {
+    background-color: transparent;
+  }
+
+  .how__wrapper {
+    min-height: 700px;
+    background: #e3353d url("../img/how/box-desktop.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+
+  .how-title {
+    margin-top: 0;
+    padding-top: 60px;
+  }
+
+  .how__img {
+    display: none;
+  }
+
+  .how__list {
+    margin-top: 80px;
+    margin-left: 56%;
+    width: 40%;
+  }
+
+  .how__list-item {
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .how__list-number {
+    font-size: 64px;
+    line-height: 68px;
+  }
+
+  .how__list-text h4 {
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  .how__list-text p {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
