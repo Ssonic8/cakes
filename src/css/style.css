@@ -64,6 +64,7 @@ img {
 
 .button {
   display: block;
+  cursor: pointer;
   padding: 12px 62px;
   background-color: #f50049;
   border-radius: 30px;
@@ -81,7 +82,6 @@ img {
 
 .container {
   margin: 0 auto;
-  /* border: 1px solid red; */
   padding: 0 0;
   width: 280px;
 }
@@ -501,6 +501,7 @@ input[type="checkbox"].visually-hidden {
   .catalog-title {
     margin-top: 45px;
     text-align: left;
+    width: 728px;
   }
 
   .catalog-list {
@@ -508,6 +509,8 @@ input[type="checkbox"].visually-hidden {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    width: 728px;
   }
 
   .catalog-list__item {
@@ -553,6 +556,10 @@ input[type="checkbox"].visually-hidden {
   .catalog-title {
     margin-top: -60px;
     margin-bottom: 60px;
+  }
+
+  .catalog-list {
+    width: 1220px;
   }
 
   .catalog-list__item {
@@ -857,6 +864,8 @@ input[type="checkbox"].visually-hidden {
     width: 42px;
     height: 42px;
     background: url("../img/icons/prev.png") center no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   }
 
   .owl-carousel .owl-nav button.owl-next {
@@ -866,6 +875,8 @@ input[type="checkbox"].visually-hidden {
     width: 42px;
     height: 42px;
     background: url("../img/icons/next.png") center no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   }
 
   .owl-carousel .owl-nav button.owl-prev:hover,
@@ -1576,6 +1587,7 @@ input[type="checkbox"].visually-hidden {
   list-style: none;
   padding-left: 0;
   background-color: #fff;
+  box-shadow: 0 5px 13px rgba(163, 6, 60, 0.1);
 }
 
 .features__one-content li {
@@ -2078,11 +2090,14 @@ input[type="checkbox"].visually-hidden {
   }
 
   .contacts__form textarea {
+    margin-top: 20px;
     margin-bottom: 70px;
     width: 95%;
-    height: 50px;
+    height: 30px;
     text-align: left;
+    border: none;
     border-radius: 0;
+    border-bottom: 1px solid #cccccc;
   }
 
   .contacts__content {
@@ -2095,5 +2110,165 @@ input[type="checkbox"].visually-hidden {
     margin: 0;
     margin-bottom: 290px;
     font-size: 19px;
+  }
+}
+
+.footer {
+  background-color: #898989;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+
+.footer__logo {
+  padding-top: 35px;
+  padding-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.footer__logo a {
+  color: #fff;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 18px;
+}
+
+.footer-nav a {
+  color: #fff;
+}
+
+.footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.footer-nav__list li {
+  margin-bottom: 8px;
+}
+
+.footer-nav__phone {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer__copyright {
+  position: relative;
+  padding: 8px;
+  padding-bottom: 2px;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__copyright::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 768px) {
+  .footer__wrapper {
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+  }
+
+  .footer__logo {
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 28px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .footer-nav__list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .footer-nav__list li {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .footer-nav__phone {
+    display: none;
+  }
+
+  .footer__copyright {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 10px;
+  }
+
+  .footer__copyright::before {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .footer {
+    background-color: #e8e8e8;
+  }
+
+  .footer__wrapper {
+    height: 110px;
+  }
+
+  .footer__logo {
+    font-size: 28px;
+  }
+
+  .footer__logo a {
+    color: #000;
+  }
+
+  .footer-nav {
+    justify-content: center;
+    width: 85%;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .footer-nav a {
+    color: #000;
+  }
+
+  .footer__copyright {
+    background-color: #e8e8e8;
+    color: grey;
+  }
+
+  .footer__copyright::before {
+    width: 80%;
+    left: 10%;
+    background-color: #d0d0d0;
   }
 }

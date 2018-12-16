@@ -161,11 +161,14 @@
 				border-bottom: 1px solid #cccccc;
 			}
 			& textarea {
+				margin-top: 20px;
 				margin-bottom: 70px;
 				width: 95%;
-				height: 50px;
+				height: 30px;
 				text-align: left;
+				border: none;
 				border-radius: 0;
+				border-bottom: 1px solid #cccccc;
 			}
 
 		}
