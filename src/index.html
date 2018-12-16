@@ -8,14 +8,17 @@
 	<link rel="icon" href="#">
 
 	<title>Cakes</title>
+
+	<!-- script for <picture> in IE -->
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
 	
+
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i&amp;subset=cyrillic" rel="stylesheet"><!-- font-family: 'Playfair Display', serif; -->
 	<link rel="stylesheet" href="css/circe.css">
 	<link rel="stylesheet" href="css/introscriptr.css">
 	
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/style.css">
- 
+	<link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
 
@@ -26,22 +29,22 @@
 			<button class="main-nav__toggle">Open menu<span></span></button>
 			<ul class="main-nav__list site-list">
 				<li class="site-list__item">
-					<a href="">Наши торты</a>
+					<a href="#catalog">Наши торты</a>
 				</li>
 				<li class="site-list__item">
-					<a href="">Индивидуальный заказ</a>
+					<a href="#constructor">Индивидуальный заказ</a>
 				</li>
 				<li class="site-list__item">
-					<a href="">Отзывы</a>
+					<a href="#reviews">Отзывы</a>
 				</li>
 				<li class="site-list__item">
-					<a href="">о нас</a>
+					<a href="#about">о нас</a>
 				</li>
 				<li class="site-list__item">
-					<a href="">как заказать</a>
+					<a href="#how">как заказать</a>
 				</li>
 				<li class="site-list__item">
-					<a href="">контакты</a>
+					<a href="#contacts">контакты</a>
 				</li>
 			</ul>
 			<div class="main-nav__phone">+7 906 899 92 96</div>
@@ -68,12 +71,12 @@
 				</div>
 			</div>
 			<div class="header-button">
-				<a href="" class="button">Выбрать торт</a>
+				<a href="#catalog" class="button">Выбрать торт</a>
 			</div>
 		</div>
 	</header>
 
-	<section class="catalog container">
+	<section id="catalog" class="catalog container">
 		<h2 class="catalog-title section-title">Наши торты</h2>
 		<ul class="catalog-list">
 			<li class="catalog-list__item item--lg">
@@ -161,7 +164,7 @@
 		</ul>
 	</section>
 
-	<section class="constructor container">
+	<section id="constructor" class="constructor container">
 		<h2 class="constructor-title section-title">Индивидуальный  заказ</h2>
 		<div class="section-subtitle">Соберите торт в 3 шага</div>
 		<ul class="constructor__list">
@@ -294,7 +297,7 @@
 		</ul>
 	</section>
 
-	<section class="reviews container">
+	<section id="reviews" class="reviews container">
 		<h2 class="reviews__title section-title">Отзывы</h2>
 		<div class="reviews__list owl-carousel" id="carousel-reviews">
 			<div class="reviews__item">
@@ -316,7 +319,7 @@
 		</div>
 	</section>
 
-	<section class="about container">
+	<section id="about" class="about container">
 		<div class="about__wrapper">
 			<h2 class="section-title about__title">О нас</h2>	
 			<div class="about__img">
@@ -409,7 +412,7 @@
 		</div>
 	</section>
 
-	<section class="how">
+	<section id="how" class="how">
 		<div class="container">
 			<div class="how__wrapper">
 				<h2 class="section-title how-title">Как заказать</h2>
@@ -443,7 +446,7 @@
 		</div>
 	</section>
 
-	<section class="contacts container">
+	<section id="contacts" class="contacts container">
 		<h2 class="section-title contacts-title">Контакты</h2>
 		<div class="section-subtitle contacts-subtitle">Остались вопросы?</div>
 		<div class="contacts__wrapper">
@@ -478,22 +481,22 @@
 				<nav class="footer-nav">
 					<ul class="footer-nav__list">
 						<li>    
-							<a href="">Наши торты</a>
+							<a href="#catalog">Наши торты</a>
 						</li>
 						<li>
-							<a href="">Индивидуальный заказ</a>
+							<a href="#constructor">Индивидуальный заказ</a>
 						</li>
 						<li>
-							<a href="">Отзывы</a>
+							<a href="#reviews">Отзывы</a>
 						</li>
 						<li>
-							<a href="">О нас</a>
+							<a href="#about">О нас</a>
 						</li>
 						<li>
-							<a href="">Как заказать</a>
+							<a href="#how">Как заказать</a>
 						</li>
 						<li>
-							<a href="">Контакты</a>
+							<a href="#contacts">Контакты</a>
 						</li>
 					</ul>
 					<div class="footer-nav__phone">+7 906 899 92 96</div>

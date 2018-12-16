@@ -1,12 +1,14 @@
 let button = document.querySelector('.main-nav__toggle');
 let menu = document.querySelector('.site-list');
 
-button.addEventListener('click', function(evt) {
-	evt.preventDefault();
-	menu.classList.toggle('site-list--active');
-});
 
 $(document).ready(function(){
+
+		button.addEventListener('click', function(evt) {
+		evt.preventDefault();
+		menu.classList.toggle('site-list--active');
+		});
+
 		$('#carousel-consist').owlCarousel({
 			items: 1,
 			loop: true,
